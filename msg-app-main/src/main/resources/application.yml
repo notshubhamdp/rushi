@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: msg-app
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://dpg-d37b8o9r0fns739cfhp0-a.oregon-postgres.render.com:5432/msg_app_hat1
+    username: root
+    password: ldSkQRaKyFXIQetwIjsurGQVLkLC3E7m
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger
+server:
+  port: 8081
+logging:
+  level:
+    root: DEBUG
